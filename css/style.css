@@ -26,9 +26,12 @@ a{
 
 a:hover{
     color: var(--red);
-    border-top: solid 4px var(--red);
-    padding-top: 46px;
     transition: var(--transition);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
 }
 
 /* Header */
@@ -47,4 +50,40 @@ header nav ul{
     list-style: none;
     gap: 80px;
     padding: 0;
+}
+
+header a:hover{
+    border-top: solid 4px var(--red);
+    padding-top: 46px;
+}
+
+/* Footer */
+
+footer{
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+footer > div{
+    background-color: var(--lightgrey);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding-right: 20%;
+    line-height: 1.5rem;
+}
+
+footer div h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+footer div a{
+    line-height: 2.5rem;
+}
+
+footer > p{
+    text-align: center;
+    padding: 20px 0;
 }
