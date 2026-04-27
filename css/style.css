@@ -224,6 +224,10 @@ header nav a:hover {
     padding-bottom: 40px;
 }
 
+.section-accomodations article h3{
+    font-size: 16px;
+}
+
 .section2 article p {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -384,10 +388,12 @@ footer>p {
 
     header {
         display: block;
+        text-align: center;
     }
 
     header nav a:hover {
         border-top: none;
+        padding-bottom: 10px;
         border-bottom: 1px solid var(--red);
     }
 
@@ -407,9 +413,14 @@ footer>p {
     #div2{
         display: block;
     }
+    #div2 a{
+        padding: 8px 4px;
+        align-items: center;
+    }
 
     #div2 ul{
         flex-wrap: wrap;
+        gap: 10px;
     }
 
     .section2 article {
