@@ -177,7 +177,8 @@ header nav a:hover{
 }
 
 .section-accomodations a:hover img,
-.section-popular a:hover img{
+.section-popular a:hover img,
+.section3 a:hover img{
     filter: grayscale(70%);
     transform: scale(1.01);
     transition: 0.3s ease-out;
@@ -186,7 +187,8 @@ header nav a:hover{
 .section-accomodations a:hover h3,
 .section-accomodations a:hover p,
 .section-popular a:hover h3,
-.section-popular a:hover p{
+.section-popular a:hover p,
+.section3 a:hover{
     color: var(--black);
 }
 
@@ -264,6 +266,7 @@ header nav a:hover{
 .section3{
     max-width: var(--max-width);
     margin: auto;
+    padding-bottom: 50px;
 }
 
 .section3 div{
@@ -271,14 +274,26 @@ header nav a:hover{
     gap: 40px;
 }
 
+.section3 article{
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px var(--lightgrey);
+    display: flex;
+    flex: 1 0 20%;
+    text-align: center;
+}
+
 .section3 img{
-    width: 320px;
+    width: 100%;
     height: 380px;
     object-fit: cover;
+    border-radius: 20px 20px 0 0;
 }
 
 .section3 h2{
     padding: 50px 0;
+}
+.section3 h3{
+    padding: 15px 0;
 }
 
 /* Footer */
