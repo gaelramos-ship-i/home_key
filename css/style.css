@@ -260,6 +260,17 @@ header nav a:hover{
     border-radius: 4px;
 }
 
+/* Section 3 */
+
+.section3{
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.section3 img{
+    width: 320px;
+}
+
 /* Footer */
 
 footer{
