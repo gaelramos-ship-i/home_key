@@ -177,14 +177,17 @@ header nav a:hover{
     transition: 0.3s ease-out;
 }
 
-.section-accomodations a:hover img{
+.section-accomodations a:hover img,
+.section-popular a:hover img{
     filter: grayscale(70%);
     transform: scale(1.01);
     transition: 0.3s ease-out;
 }
 
-.section-accomodations a:hover h2,
-.section-accomodations a:hover p{
+.section-accomodations a:hover h3,
+.section-accomodations a:hover p,
+.section-popular a:hover h3,
+.section-popular a:hover p{
     color: var(--black);
 }
 
@@ -195,13 +198,9 @@ header nav a:hover{
     justify-content: space-between;
 }
 
-.section-accomodations h1{
+.section-accomodations h2{
     font-size: 22px;
     padding-bottom: 40px;
-}
-
-.section2 h2{
-    font-size: 16px;
 }
 
 .section2 article p{
@@ -232,18 +231,33 @@ header nav a:hover{
 }
 
 .section-popular img{
+    width: 90px;
     height: 160px;
     object-fit: cover;
+    border-radius: 6px 0px 0px 6px;
 }
 
-.section-popular article{
+.section-popular a{
     display: flex;
+    justify-content: space-between;
 }
 
-.section2 a{
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 20px;
+.section-popular a div{
+    margin-right: 40px;
+}
+
+.section-popular a p{
+    padding: 26px 0;
+}
+
+.popu{
+    position: absolute;
+    top: 0;
+    padding: 4px 6px;
+    margin: 10px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 4px;
 }
 
 /* Footer */
