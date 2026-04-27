@@ -3,40 +3,40 @@
 
 /* Général */
 
-*{
+* {
     margin: 0;
     font-family: "Open Sans", sans-serif;
 }
 
 :root {
-    --black:#000;
-    --red:#f60303;
-    --white:#fff; 
-    --grey:#c1c1c1; 
-    --lightgrey:#f1f1f1;
+    --black: #000;
+    --red: #f60303;
+    --white: #fff;
+    --grey: #c1c1c1;
+    --lightgrey: #f1f1f1;
     --max-width: 1440px;
     --transition: 0.3s ease-out;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--black);
     transition: var(--transition);
 }
 
-a:hover{
+a:hover {
     color: var(--red);
     transition: var(--transition);
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
 }
 
 /* Header */
 
-header{
+header {
     max-width: var(--max-width);
     margin: auto;
     display: flex;
@@ -45,102 +45,122 @@ header{
     padding: 20px;
 }
 
-header img{
+header img {
     width: 180px;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     list-style: none;
     gap: 80px;
     padding: 0;
 }
 
-header nav a:hover{
+header nav a:hover {
     border-top: solid 1px var(--red);
     padding-top: 46px;
 }
 
 /* Section 1 */
 
-.section1{
+.section1 {
     max-width: var(--max-width);
     margin: auto;
     padding-bottom: 40px;
+    margin: 0 20px;
 }
-.section1 h1{
+
+.section1 h1 {
     font-size: 22px;
 }
-.section1 div:nth-child(1){
+
+.section1 div:nth-child(1) {
     padding: 40px 0;
 }
-.section1 form{
+
+.section1 form {
     border: solid 1px var(--grey);
     width: max-content;
     border-radius: 20px;
 }
-.section1 ul i{
+
+.section1 ul i {
     padding: 6px;
     border-radius: 6px 0 0 6px;
 }
-.section1 form input{
+
+.section1 form input {
     width: 194px;
     height: 22px;
     border: none;
 }
-.section1 form a{
+
+.section1 form button {
     background: var(--red);
     padding: 4px 10px;
     color: var(--white);
-    border-radius: 0  6px 6px 0;
+    border-radius: 0 6px 6px 0;
+    border: 1px solid var(--red);
 }
-.section1 form i{
+
+.section1 form i {
     background: var(--red);
     padding: 6px 10px;
     color: var(--white);
-    border-radius: 6px  0 0 6px;
+    border-radius: 6px 0 0 6px;
 }
-#div2{
+
+#div2 {
     display: flex;
     align-items: center;
     padding: 30px 0;
 }
-#div2 h2{
+
+#div2 h2 {
     font-size: 18px;
     margin-right: 20px;
 }
-#div2 ul{
+
+#div2 ul {
     display: flex;
     padding: 20px;
     gap: 40px;
 }
-#div2 a{
+
+#div2 a {
     border: solid 1px var(--red);
     padding: 10px 15px;
     border-radius: 10px;
 }
-#div2 a:hover{
+
+#div2 a:hover {
     background: var(--red);
     color: #fff;
 }
-#div2 i{
+
+#div2 i {
     color: var(--red);
     margin-right: 4px;
 }
-.section1 p i{
+
+#div2 a:hover i {
+    color: var(--lightgrey);
+}
+
+.section1 p i {
     color: var(--red);
 }
 
 /* Section2 */
 
-.section2{
+.section2 {
     max-width: 1440px;
     margin: auto;
     display: flex;
     gap: 40px;
 }
 
-.section2 article{
+.section2 article {
     background: var(--white);
     padding: 4px;
     border-radius: 10px;
@@ -149,7 +169,7 @@ header nav a:hover{
     flex: 1 0 27%;
 }
 
-.reco{
+.reco {
     position: absolute;
     top: 0;
     right: 0;
@@ -160,14 +180,14 @@ header nav a:hover{
     border-radius: 4px;
 }
 
-.section-accomodations img{
+.section-accomodations img {
     border-radius: 10px 10px 0 0;
     height: 160px;
     width: 100%;
     object-fit: cover;
 }
 
-.section-accomodations{
+.section-accomodations {
     background: var(--lightgrey);
     border-radius: 10px;
     padding: 50px;
@@ -178,7 +198,7 @@ header nav a:hover{
 
 .section-accomodations a:hover img,
 .section-popular a:hover img,
-.section3 a:hover img{
+.section3 a:hover img {
     filter: grayscale(70%);
     transform: scale(1.01);
     transition: 0.3s ease-out;
@@ -188,37 +208,37 @@ header nav a:hover{
 .section-accomodations a:hover p,
 .section-popular a:hover h3,
 .section-popular a:hover p,
-.section3 a:hover{
+.section3 a:hover {
     color: var(--black);
 }
 
-.section-accomodations > div{
+.section-accomodations>div {
     display: flex;
     gap: 0 20px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.section-accomodations h2{
+.section-accomodations h2 {
     font-size: 22px;
     padding-bottom: 40px;
 }
 
-.section2 article p{
+.section2 article p {
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.section2 i{
+.section2 i {
     color: var(--red);
     margin-top: 8px;
 }
 
-.section2 i:nth-child(5){
+.section2 i:nth-child(5) {
     color: var(--grey);
 }
 
-.section-popular{
+.section-popular {
     background: var(--lightgrey);
     max-width: 410px;
     border-radius: 10px;
@@ -231,27 +251,30 @@ header nav a:hover{
     padding-bottom: 40px;
 }
 
-.section-popular img{
-    width: 90px;
-    height: 160px;
+.section-popular img {
+    width: 30%;
     object-fit: cover;
     border-radius: 6px 0px 0px 6px;
 }
 
-.section-popular a{
+.section-popular a {
     display: flex;
     justify-content: space-between;
 }
 
-.section-popular a div{
+.section-popular article {
+    width: 330px;
+}
+
+.section-popular a div {
     margin-right: 40px;
 }
 
-.section-popular a p{
+.section-popular a p {
     padding: 26px 0;
 }
 
-.popu{
+.popu {
     position: absolute;
     top: 0;
     padding: 4px 6px;
@@ -263,18 +286,20 @@ header nav a:hover{
 
 /* Section 3 */
 
-.section3{
+.section3 {
     max-width: var(--max-width);
     margin: auto;
     padding-bottom: 50px;
+    margin: 0 20px;
 }
 
-.section3 div{
+.section3 div {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
-.section3 article{
+.section3 article {
     border-radius: 20px;
     box-shadow: 10px 5px 5px var(--lightgrey);
     display: flex;
@@ -282,28 +307,29 @@ header nav a:hover{
     text-align: center;
 }
 
-.section3 img{
+.section3 img {
     width: 100%;
     height: 380px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-.section3 h2{
+.section3 h2 {
     padding: 50px 0;
 }
-.section3 h3{
+
+.section3 h3 {
     padding: 15px 0;
 }
 
 /* Footer */
 
-footer{
+footer {
     max-width: var(--max-width);
     margin: auto;
 }
 
-footer > div{
+footer>div {
     background-color: var(--lightgrey);
     display: flex;
     justify-content: space-between;
@@ -312,17 +338,104 @@ footer > div{
     line-height: 1.5rem;
 }
 
-footer div h2{
+footer div h2 {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-footer div a{
+footer div a {
     line-height: 2.5rem;
 }
 
-footer > p{
+footer>p {
     text-align: center;
     padding: 20px 0;
+}
+
+@media screen and (max-width:1024px) {
+    .section2 {
+        display: block;
+    }
+
+    .section-popular {
+        margin-top: 50px;
+        max-width: 100%;
+    }
+
+    .section-popular article {
+        width: 100%;
+    }
+
+    .section-popular a {
+        justify-content: normal;
+    }
+
+    .section-popular div {
+        margin-left: 10px;
+    }
+
+    .section3 article {
+        flex: 1 0 42%;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    header {
+        display: block;
+    }
+
+    header nav a:hover {
+        border-top: none;
+        border-bottom: 1px solid var(--red);
+    }
+
+    header nav ul {
+        padding-top: 40px;
+    }
+
+    .section1 ul a {
+        display: flex;
+    }
+
+   .section1 form i,
+   .section1 form button{
+    padding: 5px 0;
+   }
+
+    #div2{
+        display: block;
+    }
+
+    #div2 ul{
+        flex-wrap: wrap;
+    }
+
+    .section2 article {
+        flex: 1 0 42%;
+    }
+
+    .section-popular img {
+        width: 42%;
+    }
+    .section-popular a div{
+        margin: 0;
+    }
+
+    .section3 div{
+        display: block;
+    }
+
+    .section3 div article{
+        margin-bottom: 40px;
+    }
+
+    footer div{
+        display: block;
+        
+    }
+    footer div article{
+        margin-bottom: 40px;
+    }
 }
