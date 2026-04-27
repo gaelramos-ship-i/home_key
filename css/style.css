@@ -80,8 +80,6 @@ header nav a:hover{
     border-radius: 20px;
 }
 .section1 ul i{
-    background: var(--red);
-    color: var(--lightgrey);
     padding: 6px;
     border-radius: 6px 0 0 6px;
 }
@@ -92,40 +90,45 @@ header nav a:hover{
 }
 .section1 form a{
     background: var(--red);
-    padding: 4px;
+    padding: 4px 10px;
     color: var(--white);
     border-radius: 0  6px 6px 0;
 }
-.section1 div:nth-child(2){
+.section1 form i{
+    background: var(--red);
+    padding: 6px 10px;
+    color: var(--white);
+    border-radius: 6px  0 0 6px;
+}
+#div2{
     display: flex;
     align-items: center;
     padding: 30px 0;
 }
-.section1 article:nth-child(3) h2{
+#div2 h2{
     font-size: 18px;
     margin-right: 20px;
 }
-.section1 nav ul{
+#div2 ul{
     display: flex;
     padding: 20px;
     gap: 40px;
 }
-.section1 nav a{
+#div2 a{
     border: solid 1px var(--red);
     padding: 10px 15px;
     border-radius: 10px;
 }
-.section1 nav a:hover{
+#div2 a:hover{
     background: var(--red);
     color: #fff;
 }
-.section1 i{
+#div2 i{
     color: var(--red);
     margin-right: 4px;
 }
-.section1 article:nth-child(4){
-    display: flex;
-    align-items: center;
+.section1 p i{
+    color: var(--red);
 }
 
 /* Section2 */
