@@ -66,8 +66,7 @@ header nav a:hover {
 .section1 {
     max-width: var(--max-width);
     margin: auto;
-    padding-bottom: 40px;
-    margin: 0 20px;
+    padding: 0 10px 40px 10px;
 }
 
 .section1 h1 {
@@ -158,6 +157,7 @@ header nav a:hover {
     margin: auto;
     display: flex;
     gap: 40px;
+    padding: 0 10px;
 }
 
 .section2 article {
@@ -242,7 +242,7 @@ header nav a:hover {
     color: var(--grey);
 }
 
-.section-popular {
+.section-popular{
     background: var(--lightgrey);
     max-width: 410px;
     border-radius: 10px;
@@ -293,9 +293,8 @@ header nav a:hover {
 .section3 {
     max-width: var(--max-width);
     margin: auto;
-    padding-bottom: 50px;
-    margin: 0 20px;
-}
+    padding: 0 10px 50px 10px;
+} 
 
 .section3 div {
     display: flex;
@@ -382,6 +381,10 @@ footer>p {
     .section3 article {
         flex: 1 0 42%;
     }
+
+    .section3 article img{
+        width: 99%;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -443,6 +446,11 @@ footer>p {
         gap: 10px;
     }
 
+    .section2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .section2 article {
         flex: 1 0 42%;
     }
@@ -454,8 +462,13 @@ footer>p {
         margin: 0;
     }
 
-    .section3 div{
-        display: block;
+    .section3 article{
+        flex: 1 0 50%;
+    }
+
+    .section3 article img{
+        width: 100%;
+        height: auto;
     }
 
     .section3 div article{
