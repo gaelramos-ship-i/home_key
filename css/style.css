@@ -408,7 +408,6 @@ footer>p {
     header nav li{
         width: -webkit-fill-available;
         text-align: center;
-        /* padding-bottom: 15px; */
         border-bottom: 1px solid var(--lightgrey);
     }
 
